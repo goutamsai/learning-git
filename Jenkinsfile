@@ -23,6 +23,8 @@ pipeline {
     }
     post {
         always {
+            bat "jfrog rt c artifactory-demo --url=http://172.18.0.100:8081/artifactory --user=admin --password=ti1w2ratp.TimAp"
+            bat "jfrog rt u hello.rb generic-local"
             echo 'We came to an end!'
         }
         success {
