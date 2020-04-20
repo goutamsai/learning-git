@@ -4,7 +4,6 @@ pipeline {
         stage('Build Stage') {
             steps {
                 echo "We are at Building..."
-                bat "ruby hello.rb"
                 echo "Building finished!"
             }
         }
