@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "We are at Building..."
                 bat "ruby hello.rb"
-                bat "powershell.exe Compress-Archive  hello.exe Hello-1.0.%BUILD_NUMBER%.zip"
+                bat "powershell.exe Compress-Archive  hello.rb Hello-1.0.%BUILD_NUMBER%.zip"
                 echo "Building finished!"
             }
         }
